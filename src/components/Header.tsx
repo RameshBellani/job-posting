@@ -35,9 +35,9 @@ export default function Header() {
         <div className="space-x-6">
           <Link href="/jobs" className="hover:text-blue-200">Jobs</Link>
           <Link href="/about" className="hover:text-blue-200">About</Link>
-          <Link href="/admin/post-job" className="bg-blue-700 px-4 py-2 rounded hover:bg-blue-800">
-            Post Job
-          </Link>
+          {/* <Link href="/admin/post-job" className="bg-blue-700 px-4 py-2 rounded hover:bg-blue-800">
+            
+          </Link> */}
         </div>
       </nav>
     </header>
