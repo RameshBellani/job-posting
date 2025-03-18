@@ -16,6 +16,7 @@ export async function POST(request: Request) {
     const job = await Job.create(body);
     return NextResponse.json(job);
   } catch (error) {
+    console.error(error);
     return NextResponse.json({ error: 'Failed to create job' }, { status: 400 });
   }
 }

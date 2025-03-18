@@ -38,6 +38,7 @@
 //   );
 // }
 // components/Footer.tsx
+
 'use client'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faLinkedin, faInstagram, faFacebook, faYoutube } from '@fortawesome/free-brands-svg-icons';

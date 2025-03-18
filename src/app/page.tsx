@@ -37,7 +37,7 @@
 //     </div>
 //   );
 // }
-
+import Link from "next/link";
 export default function Home() {
   return (
     <div>
@@ -122,12 +122,11 @@ export default function Home() {
                   Design user-centric interfaces and enhance the user
                   experience.
                 </p>
-                <a
-                  href="/jobs/3"
-                  className="text-blue-600 font-semibold hover:underline"
-                >
-                  View Details
-                </a>
+                <Link href="/jobs"
+                   className="bg-blue-700 text-white px-8 py-4 rounded-lg hover:bg-blue-800 transition-colors">
+                    Browse Jobs
+                  
+                </Link>
               </div>
             </div>
           </div>
@@ -140,15 +139,13 @@ export default function Home() {
               Ready to find your next job?
             </h2>
             <p className="text-xl mb-8">
-              Whether you're looking for full-time, part-time, or internships,
+              Whether you&apos;re looking for full-time, part-time, or internships,
               we have opportunities waiting for you.
             </p>
-            <a
-              href="/jobs"
-              className="bg-blue-600 text-white px-8 py-4 rounded-lg hover:bg-blue-700 transition-colors"
-            >
-              Browse All Jobs
-            </a>
+            <Link href="/jobs"
+               className="bg-blue-700 text-white px-8 py-4 rounded-lg hover:bg-blue-800 transition-colors">
+                Browse Jobs
+            </Link>
           </div>
         </section>
       </main>
