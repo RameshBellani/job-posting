@@ -40,7 +40,9 @@
 // components/Footer.tsx
 
 'use client'
+
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import Link from 'next/link';
 import { faLinkedin, faInstagram, faFacebook, faYoutube } from '@fortawesome/free-brands-svg-icons';
 
 export default function Footer() {
@@ -55,39 +57,39 @@ export default function Footer() {
           <div>
             <h4 className="font-semibold mb-3">For Job Seekers</h4>
             <ul className="space-y-2 text-gray-400">
-              <li><a href="/jobs" className="hover:text-white">Browse Jobs</a></li>
-              <li><a href="/about" className="hover:text-white">How It Works</a></li>
+              <li><Link href="/jobs" className="hover:text-white">Browse Jobs</Link></li>
+              <li><Link href="/about" className="hover:text-white">How It Works</Link></li>
             </ul>
           </div>
           <div>
             <h4 className="font-semibold mb-3">Company</h4>
             <ul className="space-y-2 text-gray-400">
-              <li><a href="/about" className="hover:text-white">About Us</a></li>
-              <li><a href="/contact" className="hover:text-white">Contact</a></li>
+              <li><Link href="/about" className="hover:text-white">About Us</Link></li>
+              <li><Link href="/contact" className="hover:text-white">Contact</Link></li>
             </ul>
           </div>
           <div>
             <h4 className="font-semibold mb-3">Legal</h4>
             <ul className="space-y-2 text-gray-400">
-              <li><a href="/privacy" className="hover:text-white">Privacy Policy</a></li>
-              <li><a href="/terms" className="hover:text-white">Terms of Service</a></li>
+              <li><Link href="/privacy" className="hover:text-white">Privacy Policy</Link></li>
+              <li><Link href="/terms" className="hover:text-white">Terms of Service</Link></li>
             </ul>
           </div>
         </div>
         <div className="border-t border-gray-700 mt-8 pt-4 text-center text-gray-400">
           <div className="flex justify-center space-x-6 mb-4">
-            <a href="https://www.linkedin.com" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-white">
+            <Link href="https://www.linkedin.com" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-white">
               <FontAwesomeIcon icon={faLinkedin} size="lg" />
-            </a>
-            <a href="https://www.instagram.com/jobhuntwithme/" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-white">
+            </Link>
+            <Link href="https://www.instagram.com/jobhuntwithme/" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-white">
               <FontAwesomeIcon icon={faInstagram} size="lg" />
-            </a>
-            <a href="https://www.facebook.com/profile.php?id=61574024762778" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-white">
+            </Link>
+            <Link href="https://www.facebook.com/profile.php?id=61574024762778" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-white">
               <FontAwesomeIcon icon={faFacebook} size="lg" />
-            </a>
-            <a href="https://www.youtube.com" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-white">
+            </Link>
+            <Link href="https://www.youtube.com" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-white">
               <FontAwesomeIcon icon={faYoutube} size="lg" />
-            </a>
+            </Link>
           </div>
           <p>© {new Date().getFullYear()} JobHuntWithMe. All rights reserved.</p>
         </div>

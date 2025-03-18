@@ -1,3 +1,5 @@
+import Link from "next/link";
+
 // app/(user)/about/page.tsx
 export default function AboutPage() {
     return (
@@ -8,7 +10,7 @@ export default function AboutPage() {
           </h1>
           <div className="prose prose-lg text-gray-800 mx-auto">
             <p className="leading-relaxed mb-4">
-              Welcome to <span className="font-semibold text-blue-600">JobHuntWithMe</span>, a platform designed to help you find your next career opportunity. Whether you're looking for a full-time position, part-time work, or internships, we aim to connect you with the best opportunities in your field.
+              Welcome to <span className="font-semibold text-blue-600">JobHuntWithMe</span>, a platform designed to help you find your next career opportunity. Whether you&apos;re looking for a full-time position, part-time work, or internships, we aim to connect you with the best opportunities in your field.
             </p>
   
             <div className="mt-6">
@@ -22,20 +24,20 @@ export default function AboutPage() {
               <h2 className="text-2xl font-semibold text-blue-600 mb-2">Contact Us</h2>
               <p className="text-lg text-gray-700">
                 If you have any questions or need assistance with your job search, feel free to contact us at{' '}
-                <a href="mailto:support@jobhuntwithme.com" className="text-blue-600 hover:text-blue-700">
+                <Link href="mailto:support@jobhuntwithme.com" className="text-blue-600 hover:text-blue-700">
                   support@jobhuntwithme.com
-                </a>
+                </Link>
                 .
               </p>
             </div>
   
             <div className="mt-8 flex justify-center">
-              <a
+              <Link
                 href="/jobs"
                 className="inline-block bg-blue-600 text-white px-6 py-3 rounded-lg shadow-md hover:bg-blue-700 focus:ring-4 focus:ring-blue-200 transition"
               >
                 Browse Jobs
-              </a>
+              </Link>
             </div>
           </div>
         </div>

@@ -72,14 +72,14 @@ export default function JobCard({ _id, title, description, roles, applyLink }: J
 
       {/* Apply Button */}
       <div className="flex justify-between items-center mt-4">
-        <a
+        <Link
           href={applyLink}
           target="_blank"
           rel="noopener noreferrer"
           className="inline-block bg-blue-600 text-white text-sm px-6 py-2 rounded-lg transition duration-300 ease-in-out transform hover:bg-blue-700 hover:scale-105 focus:ring-4 focus:ring-blue-200"
         >
           Apply Now
-        </a>
+        </Link>
       </div>
     </div>
   );

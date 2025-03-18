@@ -55,18 +55,18 @@ export default function Home() {
               Browse through our latest job listings and kickstart your career
             </p>
             <div className="flex justify-center gap-4">
-              <a
+              <Link
                 href="/jobs"
                 className="bg-blue-700 text-white px-8 py-4 rounded-lg hover:bg-blue-800 transition-colors"
               >
                 Browse Jobs
-              </a>
-              <a
+              </Link>
+              <Link
                 href="/about"
                 className="border-2 border-white text-white px-8 py-4 rounded-lg hover:bg-white hover:text-blue-600 transition-colors"
               >
                 Learn More
-              </a>
+              </Link>
             </div>
           </div>
         </section>
@@ -89,12 +89,12 @@ export default function Home() {
                   Develop and maintain web applications with modern
                   technologies.
                 </p>
-                <a
+                <Link
                   href="/jobs/1"
                   className="text-blue-600 font-semibold hover:underline"
                 >
                   View Details
-                </a>
+                </Link>
               </div>
 
               {/* Job Card */}
@@ -105,12 +105,12 @@ export default function Home() {
                 <p className="text-gray-600 text-sm mb-4">
                   Create and execute marketing strategies to grow the brand.
                 </p>
-                <a
+                <Link
                   href="/jobs/2"
                   className="text-blue-600 font-semibold hover:underline"
                 >
                   View Details
-                </a>
+                </Link>
               </div>
 
               {/* Job Card */}
